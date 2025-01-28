@@ -27,7 +27,7 @@
 
 
 ## Project introduction: :triangular_flag_on_post:
-This project presents a walking collaborative robot equipped with bimodal iontronic skins for adaptive mobility assistance. The iontronic skin integrates pressure and temperature sensors across a large surface area, enabling human-intent-driven control through touch-based interaction. The system employs deep learning algorithms for motion intent recognition and dynamic gesture classification, allowing for intuitive, real-time robotic assistance.
+This project presents a walking collaborative robot equipped with bimodal iontronic skins for adaptive mobility assistance. The iontronic skin integrates pressure and temperature sensors across a large surface area, enabling human-intent-driven control through touch-based interaction. The system employs deep learning algorithms for motion intent recognition and dynamic gesture classification, allowing for intuitive, real-time robotic assistance. This repository contains the core code modules and documentation for the collaborative robotics project.
 
 
 
@@ -57,7 +57,7 @@ Interactive user software was developed on a computer using Python 3.9 with the 
 # IDE:
 We recommend using the following integrated development environments (IDEs) to work with this code:
 
-- STM32CUMX
+- STM32CubeMX
 - STM32CubeIDE
 - Keil5
 - Visual Studio Code
@@ -88,7 +88,7 @@ Before you begin, ensure you have met the following requirements:
 
 # Explanation of Deep Learning Framework
 
-1. Please download all data & codes and then unzip all the folders and place them in the same folder. Dataset download link: https://drive.google.com/drive/folders/1Ehpyk6XMn0UgFS-sOneyP3ZCYR78MxMv?usp=sharing.
+Please download all data & codes and then unzip all the folders and place them in the same folder. Dataset download link: https://drive.google.com/drive/folders/1Ehpyk6XMn0UgFS-sOneyP3ZCYR78MxMv?usp=sharing.
 
 ### Construction of dataset
 The MI dataset included distributed tactile data captured by bimodal iontronic skins during simulations along various motion paths, along with reference data collected from six-axis force/torque sensors recorded at 40 Hz with over 200,000 frames. The data were collected from 12 participants of different ages and movement habits (20-54 years old, 8 men and 4 women), with each participant being tested for four rounds. In each round, the robot remained stationary under high damping, and participants applied the intended control force to the robot according to the guidance of the motion path. The data from the electronic skin was synchronized and collected alongside the real-time data from the ground truth six-axis force/torque sensors. The MI dataset was used to learn and infer the expected forces and torques transmitted by the user through interaction with iontronic skins. The DG dataset included distributed pressure data captured by iontronic skins from 12 participants performing 11 different dynamic touch gestures recorded at 40 Hz for over 50,000 frames, with each gesture repeated for four times. The pressure and touch positions reflected individual habits the participants. Cross-validation was conducted among the participants, with data from two users selected as the test dataset, and 6-fold cross-validation was performed across all users, with the average results being reported.
@@ -99,4 +99,4 @@ A transformer-based HMIM neural network was developed to map distributed pressur
 
 
 ***
-Finally, please let us know if you have any comments or suggestions by using our codes & dataset and we would love to hear from you. You can contact us through: 12231066@mail.sustech.edu.cn.
+Finally, if you have any feedback or suggestions regarding our code and dataset, please let us know—we would love to hear from you. If you encounter any issues during code implementation, feel free to contact us at 12231066@mail.sustech.edu.cn.
