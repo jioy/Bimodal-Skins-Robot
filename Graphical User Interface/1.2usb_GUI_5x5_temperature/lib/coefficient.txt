@@ -1,0 +1,5 @@
+Load ratio parameter:
+100
+
+//大利 0.5
+//大力 温度 100
