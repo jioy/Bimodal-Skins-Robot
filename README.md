@@ -29,7 +29,7 @@
 ## Project introduction: :triangular_flag_on_post:
 This project presents a walking collaborative robot equipped with bimodal iontronic skins for adaptive mobility assistance. The iontronic skin integrates pressure and temperature sensors across a large surface area, enabling human-intent-driven control through touch-based interaction. The system employs deep learning algorithms for motion intent recognition and dynamic gesture classification, allowing for intuitive, real-time robotic assistance. This repository contains the core code modules and documentation for the collaborative robotics project.
 
-
+As our project is an interdisciplinary endeavor integrating material design, hardware development, and software engineering, you may find the code somewhat chaotic. We are actively working to improve its organization and documentation. Over the coming months, we will gradually refine the code to enhance user-friendliness and expand its applicability to more intriguing and complex use cases. If you have any suggestions or specific requirements, please feel free to reach out—we would be delighted to further improve the project based on your feedback.
 
 ## Description:
 This repository contains the source code and documentation for a collaborative robot project. The robot, equipped with bimodal skin perception, is designed to sense user movement intentions and provide adaptive mobility assistance. It includes both software and hardware components for walking motion intent recognition and real-time robotic control. (The file contains the core code blocks of the project)
