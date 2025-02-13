@@ -71,6 +71,7 @@ Before you begin, ensure you have met the following requirements:
 - STM32H723VGH6 microcontroller-based system
 - Compatible sensor array and peripherals
 - Development board with debugging interface (e.g., ST-LINK/V2)
+- Jetson Xavier NX-16GB, NVIDIA
 
 2、Software Requirements:
 
