@@ -92,6 +92,8 @@ if __name__ == '__main__':
     kf = KFold(n_splits=6, shuffle=True, random_state=0)
     for cross_train, cross_test in kf.split(list(range(0, 12))):
         Cross_list.append([list(cross_train + 1), list(cross_test+1)])
+
+    # Create the tain_data   10 people
     train_path = r"../Alldata"
     trainset = dataload.MyDataset(train_path,time_lenth = length_set,
                                   k_num = Cross_list[Kcross_num-1][0], noise_mean = 0, noise_std_max = 1) # {103620,853}
@@ -103,7 +105,7 @@ if __name__ == '__main__':
 
 
 
-    # Create the test_data
+    # Create the test_data   2 people
     test_path = r"../Alldata"
     Testset_all = dataload.MyDataset(test_path,time_lenth = length_set,
                                  k_num = Cross_list[Kcross_num-1][1], noise_mean = 0, noise_std_max = 0)  # {103620,853}

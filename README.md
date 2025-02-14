@@ -42,6 +42,10 @@ This repository contains the source code and documentation for a collaborative r
 - "Deep Learning Framework" repository is a PyTorch-based neural network framework for user motion intention inference and interactive gesture recognition using sensor data. It integrates the Hybrid Motion Intention Model (HMIM)—which combines a Vector Mechanics Model (VMM) with a lightweight transformer-based neural network for accurate motion intention prediction—and the 3D Residual Convolutional Network (Res3D) for spatiotemporal feature extraction, enabling precise recognition of dynamic touch gestures. These models empower collaborative robots to interpret human intent, enhance mobility assistance, and ensure adaptive, safe interactions, even in unpredictable conditions.
 
 
+- "ROS Control Scripts" repository contains Python scripts based on the ROS platform, designed for the analysis and inference of sensor data to enable precise movement control of robots.
+
+
+
 # Platform:
 ### The code is intended to run on the following platform:
 -Windows

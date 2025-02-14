@@ -1,5 +1,2 @@
 Load ratio parameter:
 0.1
-
-
-//大利 0.5

@@ -69,16 +69,16 @@ if __name__ == '__main__':
     workers = 2
 
     # Batch size during training
-    batch_size = 20  # 10
+    batch_size = 40  # 10
 
     # Number of GPUs available. Use 0 for CPU mode.
     ngpu = 2
 
     # Number of training epochs
-    num_epochs = 15
+    num_epochs = 10
 
     # Learning rate for optimizers
-    lr = 0.0001
+    lr = 0.001
 
     # Beta1 hyperparam for Adam optimizers
     beta1 = 0.5

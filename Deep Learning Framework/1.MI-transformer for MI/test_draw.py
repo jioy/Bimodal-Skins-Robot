@@ -92,7 +92,7 @@ if __name__ == '__main__':
     for cross_train, cross_test in kf.split(list(range(0, 12))):
         Cross_list.append([list(cross_train + 1), list(cross_test+1)])
 
-    # Create the test_data
+    # Create the test_data 1/6 ---- 2 people as test_data
     test_path = r"../Alldata"
     Testset_all = dataload.MyDataset(test_path, time_lenth=length_set,
                                  k_num=Cross_list[Kcross_num - 1][1], noise_mean=0, noise_std_max=0)  # {103620,853}
