@@ -1,4 +1,4 @@
-# Walking Collaborative Robots with Bimodal Iontronic Skins for Adaptive Mobility Assistance
+# Bimodal iontronic skins powered by edge intelligence for real-time collaborative interaction
 
 
 <div align="center">
@@ -23,6 +23,15 @@
 
 <br>
 </div>
+
+
+
+This repository contains the code and models for the following paper.
+
+> [Bimodal iontronic skins powered by edge intelligence for real-time collaborative interaction](https://academic.oup.com/nsr/advance-article/doi/10.1093/nsr/nwag111/8483908?login=true)  
+> Zhibin Li*, Junli Shi*, Xinxing Chen*, Xingxing Chen*, Ping Yang, Hanxiang He, Yuquan Leng, Xintao Huan, Han Hu, Chenglong Fu✉, Taihong Wang✉, Chuan Fei Guo✉ 
+> National Science Review, 2026;, nwag111, https://doi.org/10.1093/nsr/nwag111
+
 
 
 
@@ -102,6 +111,39 @@ The MI dataset included distributed tactile data captured by bimodal iontronic s
 A transformer-based HMIM neural network was developed to map distributed pressure values from bimodal iontronic skins to motion intention. Being trained with mixed supervision using the Adam optimizer (initial learning rate 0.0001) and MSELoss, the model ran for 10 epochs with a batch size of 40. Additionally, a Res3D network was used to classify dynamic touch gestures from 100-frame tactile data, trained with Adam (learning rate 0.001) and CrossEntropyLoss over 10 epochs. Both models were implemented in PyTorch (Python 3.9) and trained on four NVIDIA T4 tensor core GPUs.
 
 
+## License
+
+The code is released under the MIT license. See [LICENSE](LICENSE) for details.
+
+
+
+## Citation
+
+If this work is useful for your research, please cite the following papers. 
+```
+@article{li2026bimodal,
+  title={Bimodal iontronic skins powered by edge intelligence for real-time collaborative interaction},
+  author={Li, Zhibin and Shi, Junli and Chen, Xinxing and Chen, Xingxing and Yang, Ping and He, Hanxiang and Leng, Yuquan and Huan, Xintao and Hu, Han and Fu, Chenglong and others},
+  journal={National Science Review},
+  pages={nwag111},
+  year={2026},
+  publisher={Oxford University Press}
+}
+
+@article{li2024ultrafast,
+  title={Ultrafast readout, crosstalk suppression iontronic array enabled by frequency-coding architecture},
+  author={Li, Zhibin and Yang, Jing and Zhang, Yuxuan and Geng, Peiyan and Feng, Jiansong and Chen, Bin and Zhang, Xu and Yuan, Guojiang and Chen, Xiaolong and Wang, Taihong},
+  journal={NPJ Flexible Electronics},
+  volume={8},
+  number={1},
+  pages={9},
+  year={2024},
+  publisher={Nature Publishing Group UK London}
+}
+```
+
+
+
 
 ***
-Finally, if you have any feedback or suggestions regarding our code and dataset, please let us know—we would love to hear from you. If you encounter any issues during code implementation, feel free to contact us at 12231066@mail.sustech.edu.cn.
+Finally, if you have any feedback or suggestions regarding our project and dataset, please let us know—we would love to hear from you. If you encounter any issues during project implementation, feel free to contact us at 12231066@mail.sustech.edu.cn.
