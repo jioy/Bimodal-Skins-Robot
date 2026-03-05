@@ -113,11 +113,11 @@ if __name__ == '__main__':
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     # Create the generator
-    net = Models.Res3D().to(device)
+    net = Models.ResNet18().to(device)
     net = nn.DataParallel(net, list(range(1)))
     print(net)
 
-    state_dict = torch.load('./result/checkpoint/1718260974_K1_L100.pth')
+    state_dict = torch.load('./result/checkpoint/1765892698_K1_L100.pth')
     net.load_state_dict(state_dict)
 
 
@@ -206,17 +206,17 @@ if __name__ == '__main__':
     # === 混淆矩阵：真实值与预测值的对比 ===
 
 
-    # y_test = np.array(y_test)
-    # y_pred = np.array(y_pred)
-    # y_test = y_test.reshape(-1, 1)
-    # y_pred = y_pred.reshape(-1, 1)
-    # print(y_test.shape)
-    # print(y_pred.shape)
-    #
-    # con_mat = confusion_matrix(y_test, y_pred)
-    #
-    # con_mat_norm = con_mat.astype('float') / con_mat.sum(axis=1)[:, np.newaxis]  # 归一化
-    # con_mat_norm = np.around(con_mat_norm, decimals=2)
-    # print(con_mat_norm)
-    # write_data('./result/fig/Confusion.csv', con_mat_norm)
+    y_test = np.array(y_test)
+    y_pred = np.array(y_pred)
+    y_test = y_test.reshape(-1, 1)
+    y_pred = y_pred.reshape(-1, 1)
+    print(y_test.shape)
+    print(y_pred.shape)
+
+    con_mat = confusion_matrix(y_test, y_pred)
+
+    con_mat_norm = con_mat.astype('float') / con_mat.sum(axis=1)[:, np.newaxis]  # 归一化
+    con_mat_norm = np.around(con_mat_norm, decimals=2)
+    print(con_mat_norm)
+    write_data('./result/fig/Confusion.csv', con_mat_norm)
 

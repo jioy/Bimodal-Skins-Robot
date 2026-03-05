@@ -34,7 +34,7 @@ write = SummaryWriter(log_dir='./result/log')  #将数据存放在这个文件�
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--Kcross_num', type=int, default=1) #    #6折交叉，交叉No.
-parser.add_argument('--length_set', type=int, default=300) #    #6折交叉，交叉No.
+parser.add_argument('--length_set', type=int, default=100) #    #6折交叉，交叉No.
 args = parser.parse_args()
 
 Kcross_num = args.Kcross_num  # Shear segment number
@@ -65,7 +65,7 @@ if __name__ == '__main__':
     batch_size = 40  # 10
 
     # Number of GPUs available. Use 0 for CPU mode.
-    ngpu = 2
+    ngpu = 4
 
     # Number of training epochs
     num_epochs = 10
@@ -115,7 +115,7 @@ if __name__ == '__main__':
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     # Create the generator
-    net = Models.Res3D().to(device)
+    net = Models.ResNet18().to(device)
     net = nn.DataParallel(net, list(range(ngpu)))
     print(net)
 
